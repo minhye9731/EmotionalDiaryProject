@@ -46,8 +46,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+//        setNavigationBar()
     }
     
+    // MARK: - 초기화면 ui설정
     func setUI() {
         for i in 0...8 {
 //            emotionButtons[i].setImage(emotionDataArray[i].emotionalSlime, for: .normal)
@@ -55,8 +57,15 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - navigation bar 상세설정
+//    func setNavigationBar() {
+//        navigationController?.navigationBar.backgroundColor = UIColor.clear
+//        navigationController?.navigationBar.isTranslucent = true
+//        navigationController?.navigationBar.shadowImage = UIImage()
+//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    }
     
-    
+    // MARK: - 감정버튼 클릭시 로직
     @IBAction func buttonTapped(_ sender: UIButton) {
         
         switch sender {
@@ -101,7 +110,4 @@ class ViewController: UIViewController {
         }
     }
     
-
-
 }
-

@@ -14,6 +14,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // 네비게이션바 투명하게 설정
+        if #available(iOS 15, *) {
+                // 네비게이션바 설정
+                let appearance = UINavigationBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+                
+                // 네비게이션바 배경색
+                appearance.backgroundColor = .clear
+                
+                // 아래 회색 라인 없애기
+                appearance.shadowColor = .clear
+                
+                UINavigationBar.appearance().standardAppearance = appearance
+                UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            }
+        
+        
         return true
     }
 
