@@ -21,8 +21,27 @@ class ViewController: UIViewController {
         Emotion(emotionalSlime: UIImage(named: "sesac_slime9.png")!, emotions: "슬퍼해")
     ]
     
-    @IBOutlet var emotionButtons: [UIButton]!
+    @IBOutlet weak var slime1: UIButton!
+    @IBOutlet weak var slime2: UIButton!
+    @IBOutlet weak var slime3: UIButton!
+    @IBOutlet weak var slime4: UIButton!
+    @IBOutlet weak var slime5: UIButton!
+    @IBOutlet weak var slime6: UIButton!
+    @IBOutlet weak var slime7: UIButton!
+    @IBOutlet weak var slime8: UIButton!
+    @IBOutlet weak var slime9: UIButton!
+
     @IBOutlet var emotionLabels: [UILabel]!
+    
+    var n1: Int = 0
+    var n2: Int = 0
+    var n3: Int = 0
+    var n4: Int = 0
+    var n5: Int = 0
+    var n6: Int = 0
+    var n7: Int = 0
+    var n8: Int = 0
+    var n9: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +54,52 @@ class ViewController: UIViewController {
             emotionLabels[i].text = "\(emotionDataArray[i].emotions) 0"
         }
     }
+    
+    
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
         
-        
+        switch sender {
+        case slime1:
+            n1 += 1
+            emotionLabels[0].text = "\(emotionDataArray[0].emotions) \(n1)"
+            
+        case slime2:
+            n2 += 1
+            emotionLabels[1].text = "\(emotionDataArray[1].emotions) \(n2)"
+            
+        case slime3:
+            n3 += 1
+            emotionLabels[2].text = "\(emotionDataArray[2].emotions) \(n3)"
+            
+        case slime4:
+            n4 += 1
+            emotionLabels[3].text = "\(emotionDataArray[3].emotions) \(n4)"
+            
+        case slime5:
+            n5 += 1
+            emotionLabels[4].text = "\(emotionDataArray[4].emotions) \(n5)"
+            
+        case slime6:
+            n6 += 1
+            emotionLabels[5].text = "\(emotionDataArray[5].emotions) \(n6)"
+            
+        case slime7:
+            n7 += 1
+            emotionLabels[6].text = "\(emotionDataArray[6].emotions) \(n7)"
+            
+        case slime8:
+            n8 += 1
+            emotionLabels[7].text = "\(emotionDataArray[7].emotions) \(n8)"
+            
+        case slime9:
+            n9 += 1
+            emotionLabels[8].text = "\(emotionDataArray[8].emotions) \(n9)"
+            
+        default:
+            print("오늘은 별 감정이 들지 않았습니다.")
+        }
+    }
     
 
 
