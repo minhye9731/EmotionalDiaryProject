@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var slime7: UIButton!
     @IBOutlet weak var slime8: UIButton!
     @IBOutlet weak var slime9: UIButton!
-
     
     @IBOutlet var emotionLabels: [UILabel]!
     
@@ -53,9 +52,8 @@ class ViewController: UIViewController {
         // 클릭한 버튼의 tag를 찾고, 해당서브스크립트에 해당하는 감정숫자에 1을 더해줌
         emotionArray[sender.tag] += 1
         
-        // (버튼을 클릭한 시기 기준) 전체 감정숫자에 해당하는 숫자를 출력
-        // Raw String을 사용하여 감정숫자 강조
-        emotionLabels[sender.tag].text = #"\(emotionDataArray[sender.tag].emotions) \#(emotionArray[sender.tag])"#
+        // (버튼 클릭시기 기준) 전체 감정숫자에 해당하는 숫자 출력
+        emotionLabels[sender.tag].text = #"\#(emotionDataArray[sender.tag].emotions) \#(emotionArray[sender.tag])"#
     }
     
 }
