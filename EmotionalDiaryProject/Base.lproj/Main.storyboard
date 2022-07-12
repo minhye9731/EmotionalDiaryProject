@@ -35,7 +35,6 @@
                                                             <constraint firstAttribute="width" secondItem="pjN-eB-6r9" secondAttribute="height" multiplier="1:1" id="f9Z-a1-W64"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime1"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHf-X4-Gmf"/>
                                                         </connections>
@@ -60,7 +59,6 @@
                                                             <constraint firstAttribute="width" secondItem="ASj-g6-tE5" secondAttribute="height" multiplier="1:1" id="E8n-pe-Y0e"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime2"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ut-b7-nWb"/>
                                                         </connections>
@@ -85,7 +83,6 @@
                                                             <constraint firstAttribute="width" secondItem="odJ-II-4TQ" secondAttribute="height" multiplier="1:1" id="eFG-B4-zvE"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime3"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dt-uO-bK1"/>
                                                         </connections>
@@ -115,7 +112,6 @@
                                                             <constraint firstAttribute="width" secondItem="Ecc-P6-3hO" secondAttribute="height" multiplier="1:1" id="bM7-hY-xzy"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime4"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCy-JL-bvy"/>
                                                         </connections>
@@ -140,7 +136,6 @@
                                                             <constraint firstAttribute="width" secondItem="lGJ-71-Xlk" secondAttribute="height" multiplier="1:1" id="S3a-20-Jsp"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime5"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgG-Ij-9PH"/>
                                                         </connections>
@@ -165,7 +160,6 @@
                                                             <constraint firstAttribute="width" secondItem="I1l-mJ-edd" secondAttribute="height" multiplier="1:1" id="91W-lU-8xz"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime6"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwj-dw-Mkv"/>
                                                         </connections>
@@ -195,7 +189,6 @@
                                                             <constraint firstAttribute="width" secondItem="tSO-FF-LmS" secondAttribute="height" multiplier="1:1" id="6Tx-pY-G4f"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime7"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Llj-Gn-f4M"/>
                                                         </connections>
@@ -220,7 +213,6 @@
                                                             <constraint firstAttribute="width" secondItem="rj0-PN-TCb" secondAttribute="height" multiplier="1:1" id="2qd-YA-yBj"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime8"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bV-iM-ong"/>
                                                         </connections>
@@ -245,7 +237,6 @@
                                                             <constraint firstAttribute="width" secondItem="cP2-uc-lpl" secondAttribute="height" multiplier="1:1" id="Kfb-oQ-lbv"/>
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="sesac_slime9"/>
                                                         <connections>
                                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCx-kc-Y1g"/>
                                                         </connections>
@@ -286,15 +277,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="slime1" destination="pjN-eB-6r9" id="b5W-c2-JRo"/>
-                        <outlet property="slime2" destination="ASj-g6-tE5" id="pzw-bs-fhG"/>
-                        <outlet property="slime3" destination="odJ-II-4TQ" id="3vH-ta-Ycw"/>
-                        <outlet property="slime4" destination="Ecc-P6-3hO" id="DCE-pe-EYe"/>
-                        <outlet property="slime5" destination="lGJ-71-Xlk" id="hmP-8w-eSh"/>
-                        <outlet property="slime6" destination="I1l-mJ-edd" id="x2R-Ub-MAe"/>
-                        <outlet property="slime7" destination="tSO-FF-LmS" id="lNE-M3-OJv"/>
-                        <outlet property="slime8" destination="rj0-PN-TCb" id="kft-AN-u5t"/>
-                        <outlet property="slime9" destination="cP2-uc-lpl" id="ZSe-sW-INI"/>
                         <outletCollection property="emotionLabels" destination="qEB-ci-DVt" collectionClass="NSMutableArray" id="vLt-cv-u0z"/>
                         <outletCollection property="emotionLabels" destination="m0v-bA-QGp" collectionClass="NSMutableArray" id="vpC-fr-Dnx"/>
                         <outletCollection property="emotionLabels" destination="xdG-fU-PMn" collectionClass="NSMutableArray" id="e7x-fc-sXk"/>
@@ -304,6 +286,15 @@
                         <outletCollection property="emotionLabels" destination="aXW-TH-NA5" collectionClass="NSMutableArray" id="Q2v-f5-msO"/>
                         <outletCollection property="emotionLabels" destination="wJm-gK-ycN" collectionClass="NSMutableArray" id="5f9-eo-Rh8"/>
                         <outletCollection property="emotionLabels" destination="pbk-Oh-xRL" collectionClass="NSMutableArray" id="MAx-dy-efN"/>
+                        <outletCollection property="slimeImages" destination="pjN-eB-6r9" collectionClass="NSMutableArray" id="WXS-li-NNE"/>
+                        <outletCollection property="slimeImages" destination="ASj-g6-tE5" collectionClass="NSMutableArray" id="brU-Nq-9LK"/>
+                        <outletCollection property="slimeImages" destination="odJ-II-4TQ" collectionClass="NSMutableArray" id="Lwb-6g-MpH"/>
+                        <outletCollection property="slimeImages" destination="Ecc-P6-3hO" collectionClass="NSMutableArray" id="SeJ-6d-gXb"/>
+                        <outletCollection property="slimeImages" destination="lGJ-71-Xlk" collectionClass="NSMutableArray" id="gXA-UU-ywv"/>
+                        <outletCollection property="slimeImages" destination="I1l-mJ-edd" collectionClass="NSMutableArray" id="31u-nj-M4J"/>
+                        <outletCollection property="slimeImages" destination="tSO-FF-LmS" collectionClass="NSMutableArray" id="R50-Uv-0DC"/>
+                        <outletCollection property="slimeImages" destination="rj0-PN-TCb" collectionClass="NSMutableArray" id="X3b-pu-81M"/>
+                        <outletCollection property="slimeImages" destination="cP2-uc-lpl" collectionClass="NSMutableArray" id="Vgu-q3-PLC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -339,15 +330,6 @@
     <resources>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="paperTextureBackground" width="500" height="642.5"/>
-        <image name="sesac_slime1" width="278" height="258"/>
-        <image name="sesac_slime2" width="278" height="258"/>
-        <image name="sesac_slime3" width="278" height="258"/>
-        <image name="sesac_slime4" width="278" height="258"/>
-        <image name="sesac_slime5" width="278" height="258"/>
-        <image name="sesac_slime6" width="278" height="258"/>
-        <image name="sesac_slime7" width="278" height="258"/>
-        <image name="sesac_slime8" width="278" height="258"/>
-        <image name="sesac_slime9" width="278" height="258"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -21,39 +21,22 @@ class ViewController: UIViewController {
         Emotion(emotionalSlime: UIImage(named: "sesac_slime9.png")!, emotions: "슬퍼해")
     ]
     
-    @IBOutlet weak var slime1: UIButton!
-    @IBOutlet weak var slime2: UIButton!
-    @IBOutlet weak var slime3: UIButton!
-    @IBOutlet weak var slime4: UIButton!
-    @IBOutlet weak var slime5: UIButton!
-    @IBOutlet weak var slime6: UIButton!
-    @IBOutlet weak var slime7: UIButton!
-    @IBOutlet weak var slime8: UIButton!
-    @IBOutlet weak var slime9: UIButton!
-    
+    @IBOutlet var slimeImages: [UIButton]!
     @IBOutlet var emotionLabels: [UILabel]!
     
     var emotionArray = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
-    }
-    
-    // MARK: - 초기화면 ui설정
-    func setUI() {
         for i in 0...8 {
-            emotionLabels[i].text = #"\(emotionDataArray[i].emotions) "0""#
+            slimeImages[i].setImage(emotionDataArray[i].emotionalSlime, for: .normal)
+            emotionLabels[i].text = #"\#(emotionDataArray[i].emotions) "0""#
         }
     }
     
     // MARK: - 감정버튼 클릭시 로직
     @IBAction func buttonTapped(_ sender: UIButton) {
-        // 클릭한 버튼의 tag를 찾고, 해당서브스크립트에 해당하는 감정숫자에 1을 더해줌
-        emotionArray[sender.tag] += 1
-        
-        // (버튼 클릭시기 기준) 전체 감정숫자에 해당하는 숫자 출력
-        emotionLabels[sender.tag].text = #"\#(emotionDataArray[sender.tag].emotions) \#(emotionArray[sender.tag])"#
+        emotionArray[sender.tag] += 1 // 클릭한 버튼의 tag 찾고, 해당 서브스크립트 감정숫자에 1 더해줌
+        emotionLabels[sender.tag].text = #"\#(emotionDataArray[sender.tag].emotions) \#(emotionArray[sender.tag])"# // 전체 감정숫자 출력
     }
-    
 }
