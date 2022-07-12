@@ -31,83 +31,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var slime8: UIButton!
     @IBOutlet weak var slime9: UIButton!
 
+    
     @IBOutlet var emotionLabels: [UILabel]!
     
-    var n1: Int = 0
-    var n2: Int = 0
-    var n3: Int = 0
-    var n4: Int = 0
-    var n5: Int = 0
-    var n6: Int = 0
-    var n7: Int = 0
-    var n8: Int = 0
-    var n9: Int = 0
+    var emotionArray = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-//        setNavigationBar()
     }
     
     // MARK: - 초기화면 ui설정
     func setUI() {
         for i in 0...8 {
-//            emotionButtons[i].setImage(emotionDataArray[i].emotionalSlime, for: .normal)
-            emotionLabels[i].text = "\(emotionDataArray[i].emotions) 0"
+            emotionLabels[i].text = #"\(emotionDataArray[i].emotions) "0""#
         }
     }
     
-    // MARK: - navigation bar 상세설정
-//    func setNavigationBar() {
-//        navigationController?.navigationBar.backgroundColor = UIColor.clear
-//        navigationController?.navigationBar.isTranslucent = true
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//    }
-    
     // MARK: - 감정버튼 클릭시 로직
     @IBAction func buttonTapped(_ sender: UIButton) {
+        // 클릭한 버튼의 tag를 찾고, 해당서브스크립트에 해당하는 감정숫자에 1을 더해줌
+        emotionArray[sender.tag] += 1
         
-        switch sender {
-        case slime1:
-            n1 += 1
-            emotionLabels[0].text = "\(emotionDataArray[0].emotions) \(n1)"
-            
-        case slime2:
-            n2 += 1
-            emotionLabels[1].text = "\(emotionDataArray[1].emotions) \(n2)"
-            
-        case slime3:
-            n3 += 1
-            emotionLabels[2].text = "\(emotionDataArray[2].emotions) \(n3)"
-            
-        case slime4:
-            n4 += 1
-            emotionLabels[3].text = "\(emotionDataArray[3].emotions) \(n4)"
-            
-        case slime5:
-            n5 += 1
-            emotionLabels[4].text = "\(emotionDataArray[4].emotions) \(n5)"
-            
-        case slime6:
-            n6 += 1
-            emotionLabels[5].text = "\(emotionDataArray[5].emotions) \(n6)"
-            
-        case slime7:
-            n7 += 1
-            emotionLabels[6].text = "\(emotionDataArray[6].emotions) \(n7)"
-            
-        case slime8:
-            n8 += 1
-            emotionLabels[7].text = "\(emotionDataArray[7].emotions) \(n8)"
-            
-        case slime9:
-            n9 += 1
-            emotionLabels[8].text = "\(emotionDataArray[8].emotions) \(n9)"
-            
-        default:
-            print("오늘은 별 감정이 들지 않았습니다.")
-        }
+        // (버튼을 클릭한 시기 기준) 전체 감정숫자에 해당하는 숫자를 출력
+        // Raw String을 사용하여 감정숫자 강조
+        emotionLabels[sender.tag].text = #"\(emotionDataArray[sender.tag].emotions) \#(emotionArray[sender.tag])"#
     }
     
 }
