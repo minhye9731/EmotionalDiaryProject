@@ -256,36 +256,31 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="A62-MN-ToP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPL-WA-bng">
                                 <rect key="frame" x="62" y="739.5" width="290" height="48.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPL-WA-bng">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="48.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="removeAllButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI6-c5-lgd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="A62-MN-ToP" secondAttribute="height" multiplier="6:1" id="qau-dl-oJQ"/>
+                                    <constraint firstAttribute="width" secondItem="bPL-WA-bng" secondAttribute="height" multiplier="6:1" id="pnH-Zv-4QD"/>
                                 </constraints>
-                            </stackView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="removeAllButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI6-c5-lgd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JV7-mU-RqZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vy-bH-i1D"/>
                             <constraint firstItem="C2r-sU-UPl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DaR-sH-MFl"/>
+                            <constraint firstItem="bPL-WA-bng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dfz-cd-Zlg"/>
                             <constraint firstItem="JV7-mU-RqZ" firstAttribute="height" secondItem="C2r-sU-UPl" secondAttribute="height" multiplier="0.45" id="H5O-HA-gzb"/>
                             <constraint firstItem="C2r-sU-UPl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H9c-32-JRV"/>
                             <constraint firstItem="JV7-mU-RqZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="TCa-Lr-8l9"/>
+                            <constraint firstItem="bPL-WA-bng" firstAttribute="top" secondItem="JV7-mU-RqZ" secondAttribute="bottom" constant="90" id="TEE-kw-jAh"/>
+                            <constraint firstItem="bPL-WA-bng" firstAttribute="width" secondItem="C2r-sU-UPl" secondAttribute="width" multiplier="0.7" id="TRj-VX-0bJ"/>
                             <constraint firstAttribute="bottom" secondItem="C2r-sU-UPl" secondAttribute="bottom" id="abi-6w-cIy"/>
-                            <constraint firstItem="A62-MN-ToP" firstAttribute="width" secondItem="C2r-sU-UPl" secondAttribute="width" multiplier="0.7" id="das-pP-X7i"/>
-                            <constraint firstItem="A62-MN-ToP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBX-8o-EZZ"/>
                             <constraint firstAttribute="trailing" secondItem="C2r-sU-UPl" secondAttribute="trailing" id="gwN-37-8vr"/>
-                            <constraint firstItem="A62-MN-ToP" firstAttribute="top" secondItem="JV7-mU-RqZ" secondAttribute="bottom" constant="90" id="pWb-xU-yrV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JV7-mU-RqZ" secondAttribute="trailing" constant="40" id="rfN-N7-bgp"/>
                             <constraint firstItem="JV7-mU-RqZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tGY-Ui-lLy"/>
                         </constraints>

@@ -19,7 +19,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUI()
+        setData()
+    }
+    
+    func setUI() {
+        removeAllButton.backgroundColor = UIColor.white
+        removeAllButton.setTitle("감정 비우기", for: .normal)
+        removeAllButton.setTitleColor(.darkGray, for: .normal)
+        removeAllButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        removeAllButton.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.center
+        removeAllButton.layer.cornerRadius = 25
+        removeAllButton.layer.shadowRadius = 25
+        removeAllButton.layer.shadowColor = UIColor.gray.cgColor
+        removeAllButton.layer.shadowOpacity = 0.3
+        removeAllButton.layer.shadowOffset = CGSize.zero
+    }
+    
+    func setData() {
         for i in 0...(emotionArray.count - 1) {
             let image = UIImage(named: "sesac_slime\(i + 1).png")
             slimeImages[i].setImage(image!, for: .normal)
@@ -56,8 +73,17 @@ class ViewController: UIViewController {
     
     // MARK: - 감정 수 저장기록 초기화하기
     @IBAction func removeAllButtonTapped(_ sender: UIButton) {
-        // 내일 오전
-        
+        for i in 0...(emotionArray.count - 1) {
+            // 삭제하고
+            defaults.removeObject(forKey: "emotion\([i])")
+            
+            // 삭제한 상태를 가져와서 저장하고
+            let currentValue = defaults.integer(forKey: "emotion\([i])")
+            defaults.set(currentValue, forKey: "emotion\([i])")
+            
+            // 전체 감정숫자 출력
+            emotionLabels[i].text = #"\#(emotionDataArray[i]) \#(defaults.integer(forKey: "emotion\([i])"))"#
+        }
     }
     
 }
